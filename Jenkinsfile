@@ -6,10 +6,10 @@ pipeline {
                 sh 'echo "Building"'
             }
         }
-        // stage('Deploy') {
-        //     steps {
-        //         sh 'echo "Deploying"'
-        //     }
-        // }
+        stage('Deploy') {
+            steps {
+                sh 'echo "Deploying"'
+            }
+        }
     }
 }
