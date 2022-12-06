@@ -1,0 +1,10 @@
+const variable1 = 1;
+const variable2 = 2;
+!!variable1 ? !!variable2 ? console.log('variable1 is true') : console.log('variable1 is false') : console.log('aaaaa') ;
+!!variable1 ? !!variable2 ? console.log('variable1 is true') : console.log('variable1 is false') : console.log('aaaaa') ;
+!!variable1 ? !!variable2 ? console.log('variable1 is true') : console.log('variable1 is false') : console.log('aaaaa') ;
+!!variable1 ? !!variable2 ? console.log('variable1 is true') : console.log('variable1 is false') : console.log('aaaaa') ;
+!!variable1 ? !!variable2 ? console.log('variable1 is true') : console.log('variable1 is false') : console.log('aaaaa') ;
+!!variable1 ? !!variable2 ? console.log('variable1 is true') : console.log('variable1 is false') : console.log('aaaaa') ;
+!!variable1 ? !!variable2 ? console.log('variable1 is true') : console.log('variable1 is false') : console.log('aaaaa') ;
+!!variable1 ? !!variable2 ? console.log('variable1 is true') : console.log('variable1 is false') : console.log('aaaaa') ;

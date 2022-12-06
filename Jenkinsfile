@@ -8,4 +8,7 @@ node {
       sh "${scannerHome}/bin/sonar-scanner"
     }
   }
+  stage('New Step') {
+    sh 'echo "Hello World"'
+  }
 }
