@@ -1,0 +1,79 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cars",
+  "info": {
+    "singularName": "car",
+    "pluralName": "cars",
+    "displayName": "Car",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "plateNumber": {
+      "type": "string",
+      "required": true
+    },
+    "vin": {
+      "type": "string",
+      "required": true
+    },
+    "photo": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "manufacturingYear": {
+      "type": "string",
+      "maxLength": 4,
+      "required": true
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "cars"
+    },
+    "document": {
+      "displayName": "Documents",
+      "type": "component",
+      "repeatable": false,
+      "component": "documents.documents"
+    },
+    "kilometer": {
+      "displayName": "kilometersHistory",
+      "type": "component",
+      "repeatable": true,
+      "component": "kilometers-history.kilometers-history"
+    },
+    "alert": {
+      "displayName": "alert",
+      "type": "component",
+      "repeatable": true,
+      "component": "alert.alert"
+    },
+    "carColor": {
+      "type": "customField",
+      "customField": "plugin::color-picker.color"
+    },
+    "manufacturer": {
+      "type": "string",
+      "required": true
+    },
+    "model": {
+      "type": "string",
+      "required": true
+    },
+    "vehicle": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::vehicle.vehicle",
+      "inversedBy": "cars"
+    }
+  }
+}

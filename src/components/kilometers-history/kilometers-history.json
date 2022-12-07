@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_kilometers_history_kilometers_histories",
+  "info": {
+    "displayName": "kilometersHistory",
+    "icon": "file-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "kilometerDate": {
+      "type": "date",
+      "required": true
+    },
+    "kilometersNumber": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

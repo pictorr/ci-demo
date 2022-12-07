@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_documents_documents",
+  "info": {
+    "displayName": "Documents",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "rca": {
+      "type": "date"
+    },
+    "vignette": {
+      "type": "date"
+    },
+    "itp": {
+      "type": "date"
+    },
+    "casco": {
+      "type": "date"
+    },
+    "medicalKit": {
+      "type": "date"
+    },
+    "extinguishing": {
+      "type": "date"
+    }
+  }
+}

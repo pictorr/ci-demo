@@ -1,0 +1,133 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vehicles",
+  "info": {
+    "singularName": "vehicle",
+    "pluralName": "vehicles",
+    "displayName": "Vehicle",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "manufacturer": {
+      "type": "string",
+      "required": true
+    },
+    "model": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "transmission": {
+      "type": "string",
+      "required": true
+    },
+    "gearboxType": {
+      "type": "enumeration",
+      "enum": [
+        "Manual",
+        "Automatic"
+      ],
+      "required": true,
+      "default": "Manual"
+    },
+    "engineCapacity": {
+      "type": "biginteger",
+      "required": true
+    },
+    "fuelType": {
+      "type": "enumeration",
+      "enum": [
+        "Petrol",
+        "Petrol Electric",
+        "Petrol/LPG",
+        "Diesel",
+        "Disesel Electric",
+        "Electricity",
+        "Electricity/Petrol"
+      ],
+      "required": true
+    },
+    "powertrain": {
+      "type": "enumeration",
+      "enum": [
+        "Battery Electric Vehicle (BEV)",
+        "Hybrid Electric Vehicle (HEV)",
+        "Internal Combustion Engine (ICE)",
+        "Micro Hybrid",
+        "Mild Hybrid Electric Vehicle (MHEV)",
+        "Plug-in Hybrid Electric Vehicle"
+      ],
+      "required": true
+    },
+    "enginePowerPs": {
+      "type": "biginteger",
+      "required": true
+    },
+    "enginePowerKw": {
+      "type": "biginteger",
+      "required": true
+    },
+    "electricConsumptionMiles": {
+      "type": "biginteger"
+    },
+    "whKm": {
+      "type": "biginteger",
+      "required": false
+    },
+    "maxRangeKm": {
+      "type": "biginteger",
+      "required": false
+    },
+    "maxRangeMiles": {
+      "required": false,
+      "type": "biginteger"
+    },
+    "euroStandard": {
+      "type": "enumeration",
+      "enum": [
+        "Euro 6c",
+        "Euro 6d",
+        "Euro 6d-TEMP",
+        "Euro 6-WLTP (for BEVs only)"
+      ],
+      "required": true
+    },
+    "testingScheme": {
+      "type": "string",
+      "default": "WLTP",
+      "required": true
+    },
+    "wltpCo2": {
+      "type": "biginteger",
+      "required": true
+    },
+    "co": {
+      "type": "biginteger",
+      "required": false
+    },
+    "thc": {
+      "type": "biginteger",
+      "required": false
+    },
+    "nox": {
+      "type": "biginteger",
+      "required": false
+    },
+    "noiseLevel": {
+      "type": "biginteger"
+    },
+    "cars": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::car.car",
+      "mappedBy": "vehicle"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_alert_alerts",
+  "info": {
+    "displayName": "alert",
+    "icon": "volume-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "alertDate": {
+      "type": "date",
+      "required": true
+    },
+    "alertType": {
+      "type": "enumeration",
+      "enum": [
+        "rca",
+        "vignette",
+        "itp",
+        "casco",
+        "medicalKit",
+        "extinguishing"
+      ],
+      "required": true
+    }
+  }
+}

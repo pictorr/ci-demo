@@ -1,45 +1,33 @@
 {
-  "name": "project-frontend",
-  "version": "0.1.0",
+  "name": "project-backend",
   "private": true,
-  "dependencies": {
-    "@headlessui/react": "^1.7.4",
-    "@heroicons/react": "^2.0.13",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.3",
-    "react-scripts": "5.0.1",
-    "tailwindcss": "^3.2.4",
-    "web-vitals": "^2.1.4"
-  },
+  "version": "0.1.0",
+  "description": "A Strapi application",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "devDependencies": {},
+  "dependencies": {
+    "@offset-dev/strapi-calendar": "^0.0.9",
+    "@strapi/plugin-color-picker": "^4.5.1",
+    "@strapi/plugin-i18n": "4.5.1",
+    "@strapi/plugin-users-permissions": "4.5.1",
+    "@strapi/strapi": "4.5.1",
+    "mysql": "2.18.1",
+    "xlsx": "^0.18.5"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "author": {
+    "name": "A Strapi developer"
   },
-  "devDependencies": {
-    "sonarqube-scanner": "^2.8.2"
-  }
+  "strapi": {
+    "uuid": "711eadfb-f3f8-4e67-ad56-d3dde9a6d1ae"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
 }

@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_locations_locations",
+  "info": {
+    "displayName": "location",
+    "icon": "building",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "address": {
+      "type": "text",
+      "required": true
+    },
+    "postcode": {
+      "type": "string",
+      "required": false
+    },
+    "country": {
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "lat": {
+      "type": "float",
+      "required": true
+    },
+    "lng": {
+      "type": "float",
+      "required": true
+    }
+  }
+}
