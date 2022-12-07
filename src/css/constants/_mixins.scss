@@ -1,9 +1,0 @@
-@mixin flex($justifyContent: initial, $alignItems: initial, $flex: initial, $flexDirection: initial) {
-  display: flex;
-  justify-content: $justifyContent;
-  align-items: $alignItems;
-  flex: $flex;
-  flex-direction: $flexDirection;
-}
-
-// You can also use @extend, @function, anything you want here.
