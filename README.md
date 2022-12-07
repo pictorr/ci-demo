@@ -2,7 +2,7 @@
 1. Start App
 ```pm2 start npm -- start```
 2. Restart App
-```pm2 stop all```a
+```pm2 stop all```
 ```pm2 start all```
 
 # Database Migration
