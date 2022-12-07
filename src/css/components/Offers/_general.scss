@@ -1,0 +1,43 @@
+.general-card {
+    .small-left {
+        margin: 1rem auto;
+    }
+}
+
+.offer-list-number-cell {
+    text-align: right !important;
+    margin: auto !important;
+    padding: 15rem auto !important;
+}
+
+.mb-1r {
+    margin-bottom: 1rem;
+}
+
+.offer-title-wrapper {
+    width: 100%;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.pt-5 {
+    padding-top: 2rem;
+}
+
+.offer-list-cell {
+    width: 4rem !important;
+}
+
+
+.tab-panel-style {
+    cursor: pointer;
+
+    transition: background-color .2s ease;
+    &:hover{
+        background-color: red;
+    }
+}
+
+.caractTehnici {
+    width: 40rem !important;
+}

@@ -1,0 +1,29 @@
+.dinosaur-image-wrapper, .dinosaur-image {
+  width: 14rem;
+  max-width: 100%;
+  height: 14rem;
+  max-height: 100%;
+  border-radius: 50%;
+}
+
+.dinosaur-image-wrapper {
+  margin: 0 auto;
+}
+
+.dinosaur-image {
+  object-fit: cover;
+}
+
+.dinosaur-details {
+  margin-top: 1rem !important;
+}
+
+.dinosaur-details-paragraph {
+  font-size: 1rem;
+  margin: 0;
+  text-align: center;
+}
+
+.dinosaur-details {
+  margin-bottom: 0 !important;
+}

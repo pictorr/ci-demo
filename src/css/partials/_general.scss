@@ -1,0 +1,56 @@
+@import "../utils/auto-importer";
+
+html, body {
+  // Material UI already adds this
+  // Add if you don't use Material UI
+  font-size: 16px;
+
+  // Force footer to bottom
+  min-height: 100vh;
+}
+
+body, #root {
+  // Force footer to bottom
+  @include flex(initial, initial, 1, column);
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  // Force footer to bottom
+  flex: 1;
+}
+
+.js-focus-visible {
+  .js-black {
+    &:focus:not(.Mui-focusVisible) {
+      border-color: $black;
+    }
+  }
+
+  &:focus:not(.Mui-focusVisible):not(.js-black) {
+    border-color: $transparent;
+  }
+}
+
+.disabled-button {
+  opacity: .7;
+}
+
+.react-datepicker-popper {
+  // If you delete this, the date picker might be positioned under other elements
+  z-index: 2 !important;
+}
+
+.general-card {
+  margin: 1rem;
+  padding: 1rem 1rem 0;
+
+  &.small {
+    width: 45rem;
+    max-width: calc(100% - 1rem);
+    margin: 1rem auto;
+  }
+}

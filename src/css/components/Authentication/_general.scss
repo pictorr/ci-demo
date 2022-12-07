@@ -1,0 +1,44 @@
+@import "../../utils/auto-importer";
+
+.authentication-form-wrapper {
+  @include flex(center, center, 1, column);
+  display: flex !important;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.authentication-form-container {
+  @include flex(initial, center, initial, column);
+  width: 100%;
+}
+
+.authentication-form-header {
+  margin-bottom: .75rem !important;
+}
+
+.authentication-form-header-icon {
+  margin: .5rem;
+  background-color: $blue !important;
+}
+
+.authentication-form {
+  @include flex(initial, center, initial, column);
+  width: 100%;
+}
+
+.authentication-form-button {
+  margin-top: 1rem !important;
+}
+
+.authentication-form-register-success-body-2 {
+  margin-top: .25rem !important;
+
+  &.margin-bottom {
+    margin-bottom: .5rem !important;
+  }
+}
+
+.authentication-form-avatar {
+  margin: .5rem !important;
+  background-color: $blue !important;
+}

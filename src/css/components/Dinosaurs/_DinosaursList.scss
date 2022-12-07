@@ -1,0 +1,23 @@
+.dinosaurs-list-title-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.dinosaurs-list-actions {
+  @include flex(flex-end, flex-end);
+}
+
+.dinosaurs-list-action-button {
+  z-index: 1;
+  width: 2rem !important;
+  min-width: unset !important;
+  margin: 0 !important;
+
+  &.edit {
+    margin-left: .5rem !important;
+  }
+}
+
+.dinosaurs-list-action-button-icon {
+  font-size: 1rem !important;
+}

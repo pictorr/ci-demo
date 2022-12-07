@@ -1,0 +1,44 @@
+.upload-field, .upload-field-filled {
+  width: 14rem;
+  max-width: 100%;
+  height: 14rem;
+  max-height: 100%;
+  border-radius: 50%;
+}
+
+.upload-field {
+  position: relative;
+  cursor: pointer;
+  border: 1px dashed $blue;
+  transition: .1s linear opacity;
+  margin: 0 auto 1rem;
+
+  &:hover {
+    opacity: .7;
+  }
+
+  &.filled {
+    border: 0;
+  }
+}
+
+.upload-field-filled {
+  object-fit: cover;
+}
+
+.upload-field-empty {
+  @include flex(center, center, initial, column);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .paragraph {
+    margin: .25rem 0 0;
+    text-align: center;
+  }
+
+  .paragraph, .icon {
+    color: $blue;
+  }
+}
