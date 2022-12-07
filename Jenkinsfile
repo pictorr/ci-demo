@@ -4,9 +4,7 @@ node {
   }
   stage('SonarQube Analysis') {
     def scannerHome = tool 'lenesu';
-    sh 'pwd'
-    sh 'cat /etc/issue'
-    sh 'node -v'
+    sh 'echo $PATH'
     withSonarQubeEnv() {
       sh "${scannerHome}/bin/sonar-scanner"
     }
